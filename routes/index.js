@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/post', function(req, res, next) {
+router.post('/post', function(req, res, next) {
   var data = req.param('data');
   if(data) {
     res.send('{"S":"'+data+'"}');
