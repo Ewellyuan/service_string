@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 const redis = require('redis')
 
+// const client = redis.createClient(6379, 'localhost')
 const client = redis.createClient(6379, 'service-string-redis')
 
 /* GET home page. */
